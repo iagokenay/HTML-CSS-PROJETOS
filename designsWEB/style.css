@@ -1,0 +1,47 @@
+h1{
+    color: blue;
+    text-align:center;
+    font-size: 33px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
+}
+p{
+    color:aliceblue;
+    font-size: 20px;
+}
+body{
+  background-color: rgb(0, 0, 0);
+}
+li {
+    list-style-type: none;
+  }
+  ul{
+    color: aliceblue;
+    font-size: 20px;
+  }
+.special{
+    color: rgb(0, 136, 255);
+    font-weight: bold;
+
+}
+/*text-align
+Esta propriedade destina-se a definir o alinhamento horizontal do texto. Trata-se de uma propriedade herdada.
+
+Os valores possíveis para esta propriedade são.
+
+left
+Alinha o texto à esquerda do box. Este é o valor inicial (ou default).
+right
+Alinha o texto à direita do box.
+center
+Alinha o texto no centro do box.
+justify
+Alinha o texto de modo que cada linha estenda-se da esquerda à direita do box.
+inherit
+O valor do alinhamento do texto é herdado.
+start
+Consta do Rascunho de Trabalho do W3C - Previsto para o futuro.
+end
+Consta do Rascunho de Trabalho do W3C - Previsto para o futuro.
+match-parent
+Consta do Rascunho de Trabalho do W3C - Previsto para o futuro.
+justify-all
+Consta do Rascunho de Trabalho do W3C - Previsto para o futuro.
