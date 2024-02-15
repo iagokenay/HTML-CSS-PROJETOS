@@ -1,0 +1,196 @@
+/* GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gugi', sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/* .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 50;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #33ff00;
+    transform: scale(1.05);
+} */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color:#00ff08;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+/* ESTILO DO CABEÇARIO */
+header{
+    padding: 40PX 4%;
+   
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+header a{
+    color: rgb(119, 120, 121);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+
+
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Topo do site */
+section.topo-site{
+    padding: 40px 4%;
+}
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-site .txt-topo-site h1{
+    color: aliceblue;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-site .txt-topo-site h1 span{
+    color: #00ff08;
+}
+.topo-site .txt-topo-site p{
+    color: aliceblue;
+   margin: 40px 0;
+}
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+h3 {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slider-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+.slider .slide{
+    width: 200px;
+}
+.slider .slide img {
+    width: 100%;
+}
+@keyframes scroll {
+    0%{
+        -webkit-transform: translatex(0);
+        transform: transletex(0);
+    }
+    100%{
+        -webkit-transform: translatex(calc(-200px *7));
+        transform: transletex(calc(-200px *7));
+    }
+}
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    
+}
+.sobre .txt-sobre{
+    color: aliceblue;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
