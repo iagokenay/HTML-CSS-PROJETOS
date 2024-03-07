@@ -88,3 +88,14 @@ body{
 .card.active .content::before{
     visibility: hidden;
 }
+#read_buton:hover{
+    background-color: transparent;
+    color: #06d62e;
+    transition: all 0.2s ease-in-out;
+}
+.card.active .content{
+    height: auto;
+}
+.card.active .content::before{
+    visibility: hidden;
+}
